@@ -1,6 +1,14 @@
-import React from 'react'
+import { useState}  from 'react'
 
 export default function Sign_up() {
+
+  const [username, setUsername] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [gender, setGender] = usestate("")
+  const [dob, setDob] = useState("")
+  const [role, setRole] = useState("")
+
   return (
     <>
     <h4>Sign up below</h4>
@@ -22,9 +30,6 @@ export default function Sign_up() {
         <label>DOB </label>
         <input type = "date" name = "dob"></input>
         <br></br><br></br>
-        <label>Mobile </label>
-        <input type = "text" name = "mobile"></input>
-       <br></br><br></br>
         <label>Role : </label>
         ADMIN<input type = "radio" name = "role" value = "admin"></input>
         CUSTOMER <input type = "radio" name = "role" value = "customer"></input>
