@@ -4,9 +4,9 @@ export default function  Welcome() {
     return (
         <>
         <h3>Welcome page</h3>
-        <button>SIGN UP</button>
+        <NavLink to={"/sign_up"}>Sign Up</NavLink>
         <br></br><br></br>
-        <button>SIGN IN</button>
+        <NavLink to={"/sign_in"}>Sign In</NavLink>
         </>
     )
 }
