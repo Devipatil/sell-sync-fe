@@ -1,13 +1,16 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-export default function addProduct() {
+export default function Add_product() {
 
     const [name, setName] = useState("");
     const [description, setDescription] = useState("");
-    const [price, setPrice] = useState("");
+    const [price, setPrice] = useState(0);
     const [photo, setPhoto] = useState("");
     const [category, setCategory] = useState("");
     const [review, setReview] = useState("");
+
+    const navigate = useNavigate();
 
     async function handleSubmit(e) {
     e.preventDefault()
@@ -32,8 +35,11 @@ export default function addProduct() {
 
     const msg = await resp.text()
     alert(msg)
-    } 
-    catch (error) {
+
+    if (msg === "Product added successfully!") {
+      navigate('/pm')
+    }
+ } catch (error) {
       console.error('Error:', error)
       alert('Failed to send data')
     }
@@ -42,25 +48,26 @@ export default function addProduct() {
 
   return (
     <div>
+      <h4>Add product below</h4>
       <form onSubmit={handleSubmit}>
-        <label>Product name </label>
-        <input type = "text" name = "name" value={setName} onChange={(e) => {e.target.value}}></input>
+        <label>Name </label>
+        <input type = "text" name = "name" value={name} onChange={(e) => setName(e.target.value)}></input>
         <br></br><br></br>
         <label>Description </label>
-        <input type = "text" name ="description" value={setDescription} onChange={(e) => {e.target.value}}></input>
+        <input type = "text" name ="description" value={description} onChange={(e) => setDescription(e.target.value)}></input>
         <br></br><br></br>
         <label>Price </label>
-        <input type = "text" name = "price" value={setPrice} onChange={(e) => {e.target.value}}></input>
+        <input type = "text" name = "price" value={price} onChange={(e) => setPrice(e.target.value)}></input>
         <br></br><br></br>
         <label>Photo</label>
-        <input type ="image" name ="photo" value={setPhoto} onChange={(e) => {e.target.value}}></input>
+        <input type ="text" name ="photo" value={photo} onChange={(e) => setPhoto(e.target.value)}></input>
         <br></br><br></br>
         <label>Category</label>
-        <input type = "text" name ="category" value={setCategory} onChange={(e) => {e.target.value}}></input>
+        <input type = "text" name ="category" value={category} onChange={(e) => setCategory(e.target.value)}></input>
         <br></br><br></br>
         <label>Review </label>
-        <input type = "text" name = "review" value={setReview} onChange={(e) => {e.target.value}}></input>
-        <button type = "submit">SUBMIT</button>
+        <textarea name = "review" value={review} onChange={(e) => setReview(e.target.value)}></textarea>
+        <button type = "submit">Add Product</button>
       </form>
     </div>
   )

@@ -1,4 +1,5 @@
-import { useState}  from 'react'
+import React, { useState }  from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Sign_up() {
 
@@ -8,7 +9,7 @@ export default function Sign_up() {
   const [gender, setGender] = useState("")
   const [dob, setDob] = useState("")
   const [role, setRole] = useState("")
-
+  const navigate = useNavigate();
 
    async function handleSubmit(e) {
     e.preventDefault()
@@ -33,7 +34,11 @@ export default function Sign_up() {
 
     const msg = await resp.text()
     alert(msg)
-    } 
+
+    if (msg === "User created successfully!"){
+      navigate('/sign_in');
+    }
+  } 
     catch (error) {
       console.error('Error:', error)
       alert('Failed to send data')
