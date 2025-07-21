@@ -8,7 +8,7 @@ export default function Add_product() {
     const [price, setPrice] = useState(0);
     const [photo, setPhoto] = useState("");
     const [category, setCategory] = useState("");
-    const [review, setReview] = useState("");
+    const [reviews, setReviews] = useState("");
 
     const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ export default function Add_product() {
       price,
       photo,
       category,
-      review
+      reviews
     };
 
     try {
@@ -66,7 +66,8 @@ export default function Add_product() {
         <input type = "text" name ="category" value={category} onChange={(e) => setCategory(e.target.value)}></input>
         <br></br><br></br>
         <label>Review </label>
-        <textarea name = "review" value={review} onChange={(e) => setReview(e.target.value)}></textarea>
+        <textarea name = "reviews" rows="5" cols="30" value={reviews} onChange={(e) => setReviews(e.target.value)}></textarea>
+        <br></br><br></br>
         <button type = "submit">Add Product</button>
       </form>
     </div>
