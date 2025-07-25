@@ -1,0 +1,52 @@
+/* ---------- Reset & base ---------- */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{
+  font-family:"Inter",system-ui,sans-serif;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+  background:var(--bg);
+}
+img,svg,video{display:block;max-width:100%}
+
+/* ---------- Design tokens ---------- */
+:root{
+  /* colour palette */
+  --primary-dark:#2E5077;
+  --primary:#4DA1A9;
+  --accent:#79D7BE;
+  --bg:#F6F4F0;
+  --text-dark:#1f2937;
+  --text-light:#ffffff;
+
+  /* radii, shadow, motion */
+  --radius-s:4px;
+  --radius-m:8px;
+  --shadow-s:0 1px 3px rgba(0,0,0,.08);
+  --duration:.25s;
+  --easing:cubic-bezier(.4,0,.2,1);
+
+  /* spacing scale */
+  --space-0:0;
+  --space-1:.25rem;  /* 4 px  */
+  --space-2:.5rem;   /* 8 px  */
+  --space-3:.75rem;  /* 12 px */
+  --space-4:1rem;    /* 16 px */
+  --space-5:1.25rem; /* 20 px */
+  --space-6:1.5rem;  /* 24 px */
+  --space-8:2rem;    /* 32 px */
+}
+
+/* ---------- Utility helpers ---------- */
+.center-block{margin-left:auto;margin-right:auto;}
+.text-center{text-align:center;}
+.flex-center{display:flex;justify-content:center;align-items:center;}
+
+.px-4{padding-inline:var(--space-4);}
+.py-6{padding-block:var(--space-6);}
+.mt-4{margin-top:var(--space-4);}
+.mt-6{margin-top:var(--space-6);}
+.mb-4{margin-bottom:var(--space-4);}
+.mb-6{margin-bottom:var(--space-6);}
+
+.app{padding-inline:var(--space-4);}
+.w-100{width:100%;}
