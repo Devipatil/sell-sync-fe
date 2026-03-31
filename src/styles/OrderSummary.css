@@ -1,0 +1,95 @@
+/* Container styling */
+.order-summary-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fefefe;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Header section */
+.bill-header {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.bill-header h2 {
+  color: #3A5A40;
+  margin-bottom: 10px;
+}
+
+/* Table styling */
+.bill-table-wrapper {
+  overflow-x: auto;
+}
+
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.bill-table th,
+.bill-table td {
+  border: 1px solid #ccc;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.bill-table th {
+  background-color: #A3B18A;
+  color: white;
+}
+
+/* Serial number column */
+.bill-table td:first-child {
+  font-weight: bold;
+  color: #344E41;
+}
+
+/* Total section */
+.bill-total {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #344E41;
+  border-top: 2px dashed #ccc;
+  padding-top: 10px;
+}
+
+/* Footer */
+.bill-footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.continue-shopping-btn {
+  background-color: #588157;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.continue-shopping-btn:hover {
+  background-color: #3A5A40;
+}
+
+/* Loading / Error messages */
+.loading-message,
+.error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  color: red;
+}

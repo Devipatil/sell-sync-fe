@@ -1,0 +1,133 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 1rem;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.product-img-wrap {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.product-img-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212121;
+}
+
+.product-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.product-desc {
+  font-size: 0.9rem;
+  color: #666;
+  min-height: 48px;
+  overflow: hidden;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  min-height: 24px; /* Fixed height to maintain layout consistency */
+  font-size: 1rem;
+  color: #f5b301;
+}
+
+.product-rating .star {
+  font-size: 1rem;
+  margin-right: 2px;
+}
+
+.product-rating .star.empty {
+  color: #ccc;
+}
+
+.product-rating .rating-text {
+  font-size: 0.9rem;
+  margin-left: 6px;
+  color: #555;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.qty-control button {
+  background-color: #eee;
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.qty-control button:hover {
+  background-color: #ddd;
+}
+
+.qty-control span {
+  min-width: 24px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #ff9f00;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #fb8c00;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}

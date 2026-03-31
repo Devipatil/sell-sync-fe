@@ -1,0 +1,92 @@
+:root {
+  --bg-light: #dad7cd;
+  --accent-1: #a3b18a;
+  --accent-2: #588157;
+  --accent-3: #3a5a40;
+  --dark: #344e41;
+}
+
+/* Layout */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #dad7cd;
+  color: var(--dark);
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent-3);
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.admin-nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.logout {
+  background-color: var(--accent-2);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.section-heading {
+  margin: 1.5rem 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+/* Admin card group */
+.admin-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Admin cards */
+.admin-card {
+  background-color: var(--accent-1);
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--dark);
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.admin-card:hover {
+  background-color: var(--accent-2);
+  color: white;
+  transform: translateY(-3px);
+}

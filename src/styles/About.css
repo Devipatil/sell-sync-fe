@@ -1,0 +1,99 @@
+body {
+  background-color: #f4d03f; /* Lemon yellow */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  line-height: 1.8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffde7;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-subheading {
+  font-size: 1.7rem;
+  color: #444;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.about-paragraph {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.about-list {
+  padding-left: 25px;
+  font-size: 1.1rem;
+  color: #333;
+  list-style-type: disc;
+}
+
+.about-thankyou {
+  margin-top: 35px;
+  font-size: 1.2rem;
+  color: #007bff;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Optional: Style nav to remain consistent */
+.nav-container {
+  background-color: var(--dark-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 2px solid var(--primary-color);
+  padding: 0.2rem 0.5rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.blink-link {
+  animation: blink 1s infinite;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+@keyframes blink {
+  0%, 100% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+}

@@ -1,0 +1,120 @@
+/* Container layout using flexbox */
+.page-container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 60px;
+  min-height: 100vh;
+  background-color: #ffd700;
+  background-repeat: no-repeat;
+  background-position: 50px center;
+}
+
+/* Left section with cart and text */
+.left-content {
+  max-width: 50%;
+}
+
+.left-content h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+}
+
+.left-content p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #222;
+}
+
+/* Sign-in container with top margin of 200px */
+.signin-container {
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  width: 360px;
+  background-color: #fffde7;
+  padding: 24px 24px; /* Reduced from 30px 28px */
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+}
+
+/* Title in sign-in box */
+.signin-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Sign-in form layout */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Form groups */
+.signin-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.signin-label {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Input fields */
+.signin-input {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  background-color: #fdfdfd;
+}
+
+.signin-input:focus {
+  border-color: #ffc107;
+  outline: none;
+}
+
+/* Button styles */
+.signin-button {
+  padding: 12px;
+  font-size: 17px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signin-button:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+/* Forgot Password link */
+.forgot-password-link {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.forgot-password-link:hover {
+  color: #0978ee;
+}

@@ -1,0 +1,181 @@
+/* Cart.css – Enhanced Modern Look */
+
+.container.cart-view {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: auto;
+}
+
+.cart-view h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #2F3E46;
+  text-align: center;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2.5rem;
+  min-width: 900px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-table th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cart-table td {
+  vertical-align: middle;
+  color: #444;
+}
+
+.cart-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Quantity buttons */
+.qty {
+  margin: 0 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-table button {
+  background-color: #DAD7CD;
+  color: #2F3E46;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-table button:hover {
+  background-color: #A3B18A;
+}
+
+/* Remove Button */
+.btn.btn-danger {
+  background-color: #D1495B;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn.btn-danger:hover {
+  background-color: #a93242;
+}
+
+/* Summary Section */
+.cart-summary {
+  text-align: right;
+  margin-top: 1.5rem;
+}
+
+.cart-summary h3 {
+  font-size: 1.6rem;
+  color: #2F3E46;
+  margin-bottom: 1.2rem;
+}
+
+/* Razorpay Button */
+.btn.btn-primary {
+  background-color: #588157;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+  background-color: #3A5A40;
+}
+
+/* Navbar (reuse globally if needed) */
+.navbar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2F3E46;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.nav-links li:hover {
+  color: #D1495B;
+}
+
+.text-danger {
+  color: #d32f2f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container.cart-view {
+    padding: 1rem;
+  }
+
+  .cart-table {
+    font-size: 0.9rem;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+
+  .btn.btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

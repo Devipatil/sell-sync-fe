@@ -1,0 +1,338 @@
+/* Custom Modern Earthy Theme */
+
+.flipkart-style-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: #2F3E46; /* Deep Green */
+  border-radius: 8px;
+  margin: 1.5rem auto 2rem;
+  flex-wrap: wrap;
+  max-width: 1440px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #FDFCDC; /* Cream */
+  cursor: pointer;
+}
+
+.flipkart-search-input {
+  flex: 1;
+  min-width: 250px;
+  max-width: 600px;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.flipkart-search-btn {
+  background-color: #E3B505; /* Warm Yellow */
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #2F3E46;
+}
+
+.flipkart-search-btn:hover {
+  background-color: #d4a304;
+}
+
+/* Cart Button */
+.btn.go-to-cart {
+  background-color: #D1495B; /* Deep Orange */
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn.go-to-cart:hover {
+  background-color: #b83749;
+}
+
+/* Page & Layout */
+.customer-home {
+  padding: 2rem 0;
+  background-color: #f5f5f5;
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+.shop-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.shop-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2e2e2e;
+  margin-bottom: 0.5rem;
+}
+
+.shop-tagline {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem; /* Add bottom padding */
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 5rem; /* Prevent pagination overlap */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: #d32f2f;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #344e41;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 1rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #dad7cd;
+}
+
+/* ===== Orders Container ===== */
+.orders-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.orders-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ===== Order Cards ===== */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.order-card {
+  border: 1px solid #ccc;
+  border-left: 5px solid #588157;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  transition: box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order-card h3 {
+  margin-top: 0;
+  color: #3a5a40;
+}
+
+/* ===== Order Tracker ===== */
+.order-tracker {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.tracker-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #588157;
+  box-shadow: 0 0 5px #588157;
+}
+
+.step-label {
+  font-size: 12px;
+  text-align: center;
+  color: #555;
+}
+
+/* ===== Items List ===== */
+.items-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.item-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.item-details h5 {
+  margin: 0;
+  color: #333;
+}
+
+.item-details p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* ===== Rating Stars ===== */
+.star-rating {
+  display: flex;
+  gap: 5px;
+}
+
+/* ===== Return Button ===== */
+.return-btn {
+  background-color: #a3b18a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.return-btn:hover {
+  background-color: #588157;
+}
+
+/* ===== Text Feedback ===== */
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: red;
+  text-align: center;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 5rem; /* extra space for mobile */
+  gap: 0.5rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #A98467;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: #6C584C;
+}
+
+.pagination .active {
+  background-color: #6C584C;
+  font-weight: bolder;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flipkart-style-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flipkart-search-input,
+  .flipkart-search-btn,
+  .btn.go-to-cart {
+    width: 100%;
+  }
+
+  .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+}

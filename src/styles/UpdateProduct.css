@@ -1,0 +1,144 @@
+:root {
+  --bg-light: #dad7cd;
+  --accent-1: #a3b18a;
+  --accent-2: #588157;
+  --accent-3: #3a5a40;
+  --dark: #344e41;
+  --highlight: #f4d03f;
+}
+
+/* === Main Page Styling === */
+.update-page {
+  padding: 2rem;
+  background-color: var(--bg-light);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* === Section Heading === */
+.section-heading {
+  text-align: center;
+  background-color: var(--highlight);
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--dark);
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Grid Layout for Product Cards === */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* === Product Card === */
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 2px solid var(--accent-2);
+  display: block;
+}
+
+/* === Card Info Section === */
+.product-info {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info h4 {
+  font-size: 1rem;
+  color: var(--dark);
+  margin: 0;
+  font-weight: 600;
+  flex: 1;
+  padding-right: 10px;
+}
+
+/* === Update Button on Card === */
+.product-info button {
+  padding: 0.4rem 0.8rem;
+  background-color: var(--accent-2);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product-info button:hover {
+  background-color: var(--accent-3);
+}
+
+/* === Update Form Styling === */
+.update-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.update-form h3 {
+  text-align: center;
+  color: var(--accent-3);
+  margin-bottom: 1.5rem;
+}
+
+.update-form input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.update-form button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: var(--accent-2);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.update-form button:hover {
+  background-color: var(--accent-3);
+}
+
+/* === Cancel Button Style === */
+.update-form button:nth-of-type(2) {
+  background-color: #ccc;
+  color: #222;
+}
+
+.update-form button:nth-of-type(2):hover {
+  background-color: #bbb;
+}

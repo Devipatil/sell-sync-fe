@@ -1,0 +1,145 @@
+/* === Colors === */
+:root {
+  --primary-color: #f4d03f; /* Lemon Yellow */
+  --dark-bg: #111;
+  --white: #fff;
+  --text-color: #333;
+}
+
+/* === Reset & Base === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+/* === Navbar === */
+.nav-container {
+  background-color: var(--dark-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 2px solid var(--primary-color);
+  padding: 0.2rem 0.5rem;
+}
+
+.nav-links a {
+  color: var(--white);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.blink-link {
+  animation: blink 1s infinite;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+@keyframes blink {
+  0%, 100% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+}
+
+/* === Hero Section === */
+.hero-section {
+  background: url('../image/homebgset3.png') no-repeat center center/cover;
+  height: 140vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #000000;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+}
+
+.hero-text span {
+  color: var(--primary-color);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #002147;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === Info Section === */
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-color: #fefefe;
+}
+
+.info-card {
+  width: 45%;
+  padding: 1.5rem;
+  background: #fff;
+  border: 3px solid yellow;
+  border-radius: 8px;
+  font-weight: 500; /* Added for slightly bolder text */
+}
+
+.info-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700; /* Bold heading */
+}
+
+.info-card ul {
+  padding-left: 1.2rem;
+}
+
+.info-card li {
+  margin: 0.5rem 0;
+  font-weight: 600; /* Bold list items */
+}
+
+/* === Footer === */
+.footer {
+  background-color: var(--dark-bg);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.footer-links a {
+  color: var(--white);
+  margin: 0 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.footer-credit {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
